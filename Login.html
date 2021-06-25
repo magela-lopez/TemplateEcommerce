@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <title>Cada Canto Modas | Moda feminina</title>
+        <meta charset="UTF-8"/>
+        <link rel="shortcut icon" href="images/Personalizacao/fav21.png">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script language="javascript" type="text/javascript" src="JS/script.js"></script>
+        <script language="javascript" type="text/javascript" src="JS/catalogoCategorias.js"></script>
+        <style>
+          .formLogin{
+            background-color: rgb(248, 140, 140);
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            height: auto;
+            margin: 50px;
+            padding: 25px;
+            border: 1px solid black;
+          }
+
+          input[type=text], input[type=password] {
+              width: 100%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+          }
+
+          button {
+              background-color: #f54b4b;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              cursor: pointer;
+              width: 100%;
+          }
+          .btnCancel{
+            width: fit-content;
+            height: auto;
+            padding: 10px;
+            background-color: #720e07;
+          }
+
+          .containerLogin{
+            padding: 20px;
+          }
+
+          span.psw {
+            float: right;
+            padding-top: 16px;
+            background: rgb(248, 140, 140);
+          }
+        </style>
+    </head>
+
+    <body>
+
+
+    <!-- Cabeceira -->
+    <main class="mainIndex">
+      <nav class="menu1">
+          <div class="list-container1">
+              <ul class="lists">
+                <li><a href="Login.html">Acessar <i class="fas fa-user"></i></a></li>
+                <li><a href="Contato.html">Contato</a></li>
+              </ul>
+          </div>
+      </nav>
+      <header>
+          <div class="ApresentacaoLoja">
+              <a href="index.html"> <img src="images/Personalizacao/logo.png" alt=""> </a> 
+           </div>
+      </header>
+
+    <!-- Menu e menu categoria-->
+      <div class="navbar">
+          <a href="index.html" >Inicio</a>
+          <a href="Acessorios.html">Acessorios</a>
+          <a href="Calcados.html">Calçados</a>
+          <div class="dropdown">
+            <a id="categoriasbtn" href="Produtos.html">Vestimenta</a>
+            <div class="dropdown-content">
+              <div class="row">
+                <div class="column">
+                  <a href="Blusas.html">Blusas</a>
+                  <a href="Blusoes.html">Blusoes</a>
+                  <a href="Calcas.html">Calcas</a>
+                </div>
+                <div class="column">
+                  <a href="Cardigans.html">Cardigans</a>
+                  <a href="Jaquetas.html">Jaquetas</a>
+                  <a href="Macacoes.html">Macacoes</a>
+                  <a href="Moletons.html">Moletons</a>
+                </div>
+                <div class="column"><img src="images/Personalizacao/headerMenu1.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <input type="search" name="search" class="searchInput" placeholder="O que voce está procurando?">
+          <button class="searchbtn"><i class="fas fa-search"></i></button>
+      </div>
+  </main>
+
+
+        <!--Form Login-->
+
+        <div>
+
+            <form class="formLogin">
+                <div class="containerLogin">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+              
+                <div class="container" style="background-color:#f1f1f1">
+                  <span class="psw"><a href="#">Forgot password?</a></span>
+                </div>
+              </form>
+        </div>
+        
+        
+
+        <footer class="footer">
+            <div class="footersection">
+              <h2 class="footertitle">Sobre Nós</h2>
+              <p class="footer_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac maximus quam. Proin a congue nunc. Pellentesque interdum orci elit, in dapibus purus sagittis ornare.</p>
+            </div>
+            <div class="footersection">
+              <h2 class="footertitle">Localizaçao</h2>
+              <p class="footer_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <P>Segunda a Sexta, das 08h às 18h e aos Sábados, das 09h às 18h</P>
+            </div>
+            <div class="footersection">
+              <h2 class="footertitle"> <a href="Contato.html">Trabalhe com a gente</a></h2>
+              <div class=newsletter_section>
+                <h2 class="newsletter">NEWSLETTER</h2>
+                <p>CADASTRE-SE PARA RECEBER AS NOVIDADES</p>
+                <input type="email" id="emailsubs" placeholder="Digite seu email...">
+                <button type="submit" class="btn" id="btnsubmit">Enviar</button>
+              </div>
+            </div>
+  
+            <p class="copy">&copy;Cada Canto Modas - 2021 | Todos os direitos reservados</p>
+        </footer>
+  
+    </body>
+
+</html>

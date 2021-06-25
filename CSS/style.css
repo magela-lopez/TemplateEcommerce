@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(248, 240, 240) ;
+}
+/*Logo e nome Loja*/
+.ApresentacaoLoja{
+    width: 200px;
+    display: flexbox;
+    margin: auto;
+    height: auto;
+    float: inline-start;
+    
+    border-bottom: 1px solid black;
+}
+
+.menu1 {
+    background: rgb(248, 240, 240);
+    padding: none;
+    text-align: right;
+    display: block;
+}
+.menu1 li{
+    list-style: none;
+    padding: none;
+    margin-right: 30px;
+    font-size: 5px;
+    font-family: raleway light;
+    display: inline-block; 
+}
+.menu1 li a{
+    text-decoration: none;
+    margin: 0px 0px;
+    padding: 0px;
+    border-radius: 30px;
+    font-size: 15px;
+    transition: 0.3s;
+    color: black;
+}
+
+.lists a:hover{
+    color: rgb(163, 158, 158);
+}
+
+.mainIndex{
+    background: antiquewhite;
+    width: 100%;
+}
+
+/*--------------------------------*/
+
+
+/*Configuracoes Slider*/
+.container-slider{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff,
+                0 15px 50px;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+.slider__section{
+    width: 100%;  
+}
+
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider__btn:hover{
+    background: #fff;
+}
+.slider__btn--left{
+    left: 10px;
+}
+.slider__btn--right{
+    right: 10px;
+}
+/*--------------------------------*/
+
+
+/*Estilização do menu principal com o menu Categorias*/
+.navbar {
+    overflow: hidden;
+    background-color: antiquewhite;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font: bold 15px raleway light;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    width: max-content;
+  }
+  .dropdown #categoriasbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
+    background: inherit;
+    font: inherit;
+    font: bold 15px raleway light; 
+  }
+
+  .dropdown .dropbtn #categoriasbtn{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover #categoriasbtn {
+    background-color:rgb(255, 251, 251);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0;
+    z-index: 1;
+    margin-top: 43px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .column {
+    float: left;
+    width: max-content;
+    padding: 10px;
+    background-color: rgb(255, 251, 251);
+    height: 300px;
+    margin-top: 0px;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+  }
+  
+  .column h4{
+    font: italic 15px raleway light;
+  }
+  .column img{
+    float: right;
+    width: 280px;
+    height: 280px;
+    opacity: 80%;
+  }
+  .column a:hover {
+    background-color: antiquewhite;
+  }
+  .row{
+    float: right;
+    width: max-content;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    float: right;
+  }
+
+  input[type=search] {
+    height: 30px;
+    width: 200px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  input[type=search]:focus {
+    width: 100%;
+    height: 50px;
+  }
+  .searchbtn{
+    background: rgb(247, 161, 161);
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    position: relative;
+    float: right;
+  }
+
+  .searchbtn:hover{
+    background: white;
+  }
+
+  /*--------------------------------*/
+
+
+/*Footer*/
+.footer{
+  background:  rgb(151, 150, 150);
+  color: rgb(12, 12, 12);
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  border-top: 1px solid rgb(94, 92, 92);
+  margin-top: 120px;
+}
+
+.footertitle{
+  border-bottom: 1px solid rgb(12, 12, 12);
+  width: 100%;
+  height: auto;
+}
+.footer_txt{
+  color:  rgb(12, 12, 12);
+  font-size: 14px;
+  width: 100%;
+  height: auto;
+}
+.footersection{
+  padding-left: 10px;
+  width: 100%;
+  height: auto;
+}
+.copy{
+  left: 50px;
+}
+.footersection a {
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+}
+
+.newsletter_section{
+  margin-top: 50px;
+  border-top: 1px solid rgb(2, 2, 2);
+  width: 100%;
+  height: auto;
+}
+
+.newsletter_section input{
+  background: white;
+  width: 100%;
+  display: flexbox;
+  padding: 10px;
+  height: auto;
+}
+
+.newsletter_section .btn{
+  background: antiquewhite;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  float: right;
+  right: 30px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.newsletter_section .btn:hover{
+  background: whitesmoke;
+}
+/*-----------------------------------------*/
+
+/*Produtos Destacados e Novidades*/
+
+#Novidade{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  box-shadow: 0 5px 10px;
+  background-color: rgb(252, 244, 235);
+}
+.produtos{
+    text-align: center;
+    border: 1px solid gray;
+}
+.produtos img{
+  object-fit: cover;
+  padding: 10px;
+}
+
+.produtos img:hover{
+  padding: 0;
+  transition: 1s;
+}
+.prodNovidades {
+  text-align: center;
+  border: 1px solid gray;
+}
+.prodNovidades img{
+  object-fit: cover;
+  padding: 10px;
+}
+
+.prodNovidades img:hover{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  transition: 1s;
+}
+
+.titles{
+  text-align: center;
+  margin: 50px;
+}
+
+#maisInfo{
+
+  background: none;
+  border: none;
+}
+#maisInfo a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/*------------------------------------*/

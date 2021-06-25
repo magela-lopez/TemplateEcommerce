@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <title>Cada Canto Modas | Moda feminina</title>
+        <meta charset="UTF-8"/>
+        <link rel="shortcut icon" href="images/Personalizacao/fav21.png">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script language="javascript" type="text/javascript" src="JS/script.js"></script>
+        <script language="javascript" type="text/javascript" src="JS/catalogoCategorias.js"></script>
+        <style>
+           input[type=text], select, textarea {
+                    width: 100%; 
+                    height: auto;
+                    padding: 12px;
+                    border: 1px solid rgb(85, 84, 84);
+                    box-sizing: border-box;
+                    margin: 20px;
+                    }
+                    input[type=submit] {
+                    background-color: #960c0c;
+                    color: white;
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    }
+                    input[type=submit]:hover {
+                    background-color: #af3838;
+                    }
+                    .formContato{
+                    background-color: #f38989;
+                    padding: 20px;
+                    margin: 15px;
+                    }
+        </style>
+    </head>
+
+    <body>
+
+
+    <!-- Cabeceira -->
+    <main class="mainIndex">
+      <nav class="menu1">
+          <div class="list-container1">
+              <ul class="lists">
+                <li><a href="Login.html">Acessar <i class="fas fa-user"></i></a></li>
+                <li><a href="Contato.html">Contato</a></li>
+              </ul>
+          </div>
+      </nav>
+      <header>
+          <div class="ApresentacaoLoja">
+              <a href="index.html"> <img src="images/Personalizacao/logo.png" alt=""> </a> 
+           </div>
+      </header>
+
+    <!-- Menu e menu categoria-->
+      <div class="navbar">
+          <a href="index.html" >Inicio</a>
+          <a href="Acessorios.html">Acessorios</a>
+          <a href="Calcados.html">Calçados</a>
+          <div class="dropdown">
+            <a id="categoriasbtn" href="Produtos.html">Vestimenta</a>
+            <div class="dropdown-content">
+              <div class="row">
+                <div class="column">
+                  <a href="Blusas.html">Blusas</a>
+                  <a href="Blusoes.html">Blusoes</a>
+                  <a href="Calcas.html">Calcas</a>
+                </div>
+                <div class="column">
+                  <a href="Cardigans.html">Cardigans</a>
+                  <a href="Jaquetas.html">Jaquetas</a>
+                  <a href="Macacoes.html">Macacoes</a>
+                  <a href="Moletons.html">Moletons</a>
+                </div>
+                <div class="column"><img src="images/Personalizacao/headerMenu1.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <input type="search" name="search" class="searchInput" placeholder="O que voce está procurando?">
+          <button class="searchbtn"><i class="fas fa-search"></i></button>
+      </div>
+  </main>
+
+
+        <!--Form Login-->
+
+        <div class="formContato">
+            <form>
+          
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="Nome" placeholder="Nome..">
+          
+              <label for="sobrenome">Sobrenome</label>
+              <input type="text" id="sobrenome" name="Sobrenome" placeholder="Sobrenome..">
+          
+              <label for="country">País</label>
+              <select id="pais" name="pais">
+                <option value="Brasil">Brasil</option>
+                <option value="Uruguai">Uruguai</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Mensagem</label>
+              <textarea id="mensagemTxt" placeholder="Escreva sua mensagem.." style="height:200px"></textarea>
+              <input type="submit" value="Enviar">
+
+              <input type="file" value="Enviar">
+          
+            </form>
+          </div>
+        
+        
+
+        <footer class="footer">
+            <div class="footersection">
+              <h2 class="footertitle">Sobre Nós</h2>
+              <p class="footer_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac maximus quam. Proin a congue nunc. Pellentesque interdum orci elit, in dapibus purus sagittis ornare.</p>
+            </div>
+            <div class="footersection">
+              <h2 class="footertitle">Localizaçao</h2>
+              <p class="footer_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <P>Segunda a Sexta, das 08h às 18h e aos Sábados, das 09h às 18h</P>
+            </div>
+            <div class="footersection">
+              <h2 class="footertitle"> <a href="">Trabalhe com a gente</a></h2>
+              <div class=newsletter_section>
+                <h2 class="newsletter">NEWSLETTER</h2>
+                <p>CADASTRE-SE PARA RECEBER AS NOVIDADES</p>
+                <input type="email" id="emailsubs" placeholder="Digite seu email...">
+                <button type="submit" class="btn" id="btnsubmit">Enviar</button>
+              </div>
+            </div>
+  
+            <p class="copy">&copy;Cada Canto Modas - 2021 | Todos os direitos reservados</p>
+        </footer>
+  
+    </body>
+
+</html>
